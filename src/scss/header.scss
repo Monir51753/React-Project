@@ -1,0 +1,52 @@
+@use 'base';
+
+header {
+    background-color: base.$bg-color;
+    color: base.$font-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family:base.$font-family;
+
+
+    h1 {
+        width: 30%;
+        cursor: pointer;
+    }
+
+    ul {
+        display: flex;
+        width: 50%;
+
+        li {
+            padding: 5px 20px;
+            list-style: none;
+            
+        }        
+        li:hover  a {
+            border-bottom: 1px solid base.$font-color;
+        }
+
+        a {
+            text-decoration: none;
+            color: base.$font-color;
+        }
+    }
+
+    button {
+        flex: 1;
+        background-color: base.$bg-color;
+        padding: 5px 10px;
+        border: 1px solid base.$font-color;
+        border-radius: 5px;
+        color:  base.$font-color;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: base.$font-color;
+        border: 1px solid base.$bg-color;
+        color:  base.$bg-color;
+        outline: 0.5px solid base.$font-color; ;
+    }
+}
